@@ -1,0 +1,727 @@
+*{
+    text-decoration:none; 
+    list-style:none; 
+    margin:0px; 
+    padding:0px; 
+    outline:none;
+    text-decoration: none;
+    
+}
+a{
+    
+}
+body{
+    margin:0px; 
+    padding:0px; 
+    font-family: 'google sans', sans-serif;
+}
+section{
+    width:100%; 
+    max-width:1300px;
+    margin:0px auto; 
+    display:table; 
+    position:relative;
+}
+header{
+    width:100%; 
+    display:table; 
+    background-color:#3A3768; 
+    margin-bottom:50px;
+}
+#logo img{
+    float:left; 
+    width: 8rem;
+}
+nav{
+    width:auto; 
+    float:right;}
+nav ul{
+    display:table; 
+    float:right;}
+nav ul li{
+    float:left;}
+nav ul li:last-child{
+    padding-right:0px;}
+nav ul li a{
+    color:#f9fcff; 
+    font-size:18px; 
+    padding: 25px 20px; 
+    display:inline-block; 
+    transition: all 0.5s ease 0s;}
+nav ul li a:hover{  
+    color:#38D39F; 
+    transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{
+    display:table; 
+    width:25px;}
+.toggle-menu ul li{
+    width:100%; 
+    height:3px; 
+    background-color:#38D39F; 
+    margin-bottom:4px;}
+.toggle-menu ul li:last-child{
+    margin-bottom:0px;}
+
+input[type=checkbox], label{display:none;}
+
+
+
+
+/* queries */
+@media only screen and (max-width: 1440px) {
+    section{max-width:90%;}
+    }
+
+@media only screen and (max-width: 980px) {
+    header{padding:20px 0px;}
+    #logo{padding:20px;}
+    
+    label {float:right; 
+        padding:20px 0px; 
+        display:inline-block; 
+        cursor:pointer; }
+    input[type=checkbox]:checked ~ nav {display:block;}
+    
+    nav{display:none; 
+        position:absolute; 
+        right:0px; 
+        top:53px; 
+        background-color:#3A3768; 
+        padding:0px; 
+        z-index:99;}
+    
+    nav ul{width:auto;}
+    
+    nav ul li{float:none; 
+        padding:0px; 
+        width:100%; 
+        display:table;}
+    nav ul li a{
+        color:#FFF; 
+        font-size:15px; 
+        padding:10px 20px; 
+        display:block;}
+    nav ul li a i{color:#38D39F; 
+        padding-right:13px;}
+    }
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+label{padding:5px 0px;}
+#logo{font-size: 20px;}
+nav{top:47px;}
+}
+/*fin de header */
+
+
+/*footer */
+footer{
+    background-color: #3A3768;
+    height: auto;
+    margin-top: 3rem;
+
+    
+}
+footer .leftSide{
+    height: auto;
+    width: 25%;
+    color: #8B8BD1;
+    font-size: 0.7rem;
+    float: left;
+    text-align: center;
+}
+footer .leftSide img{
+    width: 5rem;
+}
+#aboutCompany{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight:bold;
+}
+#mailCompany{
+    padding-bottom: 0.5rem;
+}
+footer .middleSide{
+    height: auto;
+    width: 50%;
+
+    float: left;
+
+}
+.middleSide p{
+    color: #8B8BD1;
+    font-size: 0.7rem;
+    padding-top: 3.2rem;
+    width: 90%;
+    text-align:center;
+    margin: 0 auto;
+}
+.contactSection input{
+    color: #8B8BD1;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    height: 2rem;
+    margin-top: 1rem;
+    width: 15rem;
+}
+.contactSection button{
+    background-color: #38D39F;
+    border: none;
+    border-radius: 7px;
+    height: 2rem;
+    margin-top: 1rem;
+    width: 6rem;
+   
+}
+.contactContainer{
+    width: 22rem;
+    margin: 0 auto;
+}
+.contactSection button a{
+    color: white;
+    
+}
+
+footer .rightSide{
+    height: auto;
+    width: 25%;
+    float: left;
+    
+}
+
+.rightSide ul li a{
+    color: #8B8BD1;
+    font-size: 0.8rem;
+}
+.rightSide ul{
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.rightSide img {
+    width: 1.5rem;
+    padding-top: 1rem;
+
+    
+}
+.socialNetIcons{
+    width: 5rem;
+    margin: 0 auto;
+}
+.darkFooter{
+    background-color: #2A2A51;
+    height: 1.3rem;
+    text-align: center;
+}
+.darkFooter p {
+    color: #8B8BD1;
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+
+}
+@media only screen and (max-width: 720px) {
+    footer .leftSide {
+        width: 100%;}
+    footer .middleSide {
+        width: 100%;}
+    footer .rightSide {
+        width: 100%;}
+    }
+/* fin footer*/
+
+/* --------------------- Home --------------------*/
+.firstDiv{
+    
+    height: 25rem;
+}
+.firstDiv img{
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+}
+.firstDivText{
+    height: 25rem;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    color: #3A3768;
+    text-align: center;
+}
+.firstDivText h1{
+    font-size: 2rem;
+    font-family: 'google sans';
+    width: 100%;
+    height: auto;
+}
+
+.firstDivText p {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.firstDivText h1 span {
+    color: #38D39F;
+    font-family: 'google sans';
+}
+.firstDivBut{
+    background-color: #38D39F;
+    width: 10em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.firstDivBut a{
+    text-decoration: none;
+    color: white;
+}
+.firstDivBut:hover{
+    background-color: rgb(22, 146, 105);
+}
+/* services */
+.services{
+    background-color: #3A3768;
+    height:auto;
+    margin-top: 6rem;
+    text-align: center;
+    
+}
+.services h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: 'google sans', sans-serif;
+ 
+}
+.services p {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-family: 'google sans', sans-serif;
+}
+.servicesSection{
+    height:25rem;
+    margin-top: 2rem;
+}
+.serviceSection{
+    width: 33%;
+    height: 20rem;
+    text-align: center;  
+    float: left;
+        
+}
+.servicesSection .serviceSection h3{
+    padding-top: 1rem;
+    color: white;
+    font-weight: 100;
+}
+.serviceSection img {
+    width: 10rem;
+    padding-top: 3rem;
+}
+.paraSectionService{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    font-weight: 100;
+}
+.serviceButt{
+    background-color: #38D39F;
+    width: 6em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.serviceButt a{   
+    color: white;
+
+}
+#firstbutton {
+    margin-top:2.7rem;
+
+    
+}
+#paradev{
+    padding-top: 1.8rem;
+}
+#phonepic{
+    width: 5rem;
+}
+/*why choose us */
+.whyChooseUs img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 1rem;
+}
+.whyChooseUs h1{
+    color: #3A3768;
+    margin: 0 auto;
+    padding-top: 3rem;
+    width: 15rem;
+    font-size: 2rem;
+    font-family: 'google sans', sans-serif;
+    display: block;
+}
+.parachooseUs{
+    padding-top: 2rem;
+    width: 45%;
+    margin: 0 auto;
+    color: #3A3768;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.information h1{
+    color: #3A3768;
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    margin-top: 3rem;
+}
+.information table {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .serviceSection{
+        width: auto;}
+}
+
+
+.my-table tbody td {
+    background-color: #38D39F;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    margin: 3rem;
+    text-align: center;
+
+}
+
+
+
+/* --------------------- Services --------------------*/
+.ServiceDiv{
+    height:25rem;
+    text-align: center;
+}
+.ServiceDiv .servicesTitle {
+    font-size: 3rem;
+    color: #3A3768;
+    font-weight: bold;
+}
+.picsContainer{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.firstServDiv {
+    height: auto;
+    font-size: 1rem;
+    padding-top: 2rem;   
+}
+
+.ServiceDiv img{
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+.ServiceDiv .servTitleService {
+    color: #3A3768;
+    font-family: 'google sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+.firstServDiv img{
+    width: 10rem;
+    padding-top: 3rem;
+}
+.firstServDiv .servParaService{
+    width: 60%;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    color: #3A3768;
+    padding-top: 2rem;
+}
+.webDevButton{
+    background-color: #38D39F;
+    width: 6em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.webDevButton a {
+    color: white;
+}
+.footerOfServicePage{
+    margin-top: 90rem;
+}
+/* media queries for Services */
+
+@media only screen and (max-width: 720px) {
+    .footerOfServicePage{
+        margin-top: 128rem;}
+}
+
+/* --------------------- portfolio --------------------*/
+
+.portMainPics img{
+    width: 35%;
+}
+.portMainPics {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.portMainPics p {
+    font-size: 3rem;
+    color: #3A3768;
+    font-weight: bold;
+}
+.sectionOfButtns{
+    text-align: center;
+}
+.sectionOfButtns button{
+    background-color: #38D39F;
+    width: 9em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.sectionOfButtns button a {
+    color: white;
+}
+.portfolioSection{
+    width: 75%;
+    height: 15rem;
+    background-color: #ADF7D9;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+.portSect {
+    height:15rem;
+
+    color: #3A3768;
+}
+.portAlign img{
+    width: 35%;
+    padding: 1.5rem;
+    float: left;
+}
+.portAlignTxt{
+    float: left;
+    width: 50%; 
+}
+
+
+#titleOne{
+    padding-top: 1.5rem;
+}
+#titleTwo{
+    padding-top: 0.5rem;
+    font-weight: bold;
+}
+#paraPortfolio{
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.downloadButt{
+    background-color: #38D39F;
+    width: 9em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.downloadButt a{
+    color: white;
+}
+.moreProjects{
+    background-color: #38D39F;
+    width: 12rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 1.8rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.moreProjects a{
+    color: white;
+}
+@media only screen and (max-width: 720px) {
+    .portAlign img{
+        width: 80%;}
+        .portAlignTxt{
+            width: 100%;
+            text-align: center;
+        }
+        .portfolioSection{
+            height: 34rem;
+        }
+}
+@media only screen and (max-width: 520px) {
+    .portfolioSection{
+        height: 30rem;
+    }
+}
+
+/* --------------------- team --------------------*/
+.teamSection .titleTeam{
+    font-size: 3rem;
+    color: #3A3768;
+    font-weight: bold;
+    text-align: center;
+}
+.teamSection img{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 2rem;
+}
+.teamSection .paraTeam{
+    width: 70%;
+    text-align: center;
+    color: #3A3768;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.teamMembers {
+    height: 20rem;
+    margin-top: 1rem;
+
+}
+.mombersection{
+    width: 25%;
+    height: 20rem;
+    text-align: center;
+    color: #3A3768;
+    float: left;
+    
+}
+.mombersection img{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 2rem;
+    color: #3A3768;
+}
+.mombersection .nameMember{
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+.socialNetDiv img{
+    width: 1.5rem;
+    display: inline-block;
+    margin-left: 0.2rem;
+    margin-top: -1.5rem;
+    color: #3A3768;
+    
+}
+.statisticsTitle{
+    font-size: 2rem;
+    color: #3A3768;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4rem;
+}
+.teamMembers .statisticsImage{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 3rem;
+}
+.tableSection{
+    margin: 0 auto;
+    display: block;
+    width:15rem;
+    text-align: center;
+}
+.shareBut{
+    background-color: #3A3768;
+    width: 20rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+   
+}
+
+.shareBut a{
+    color: white;
+}
+.teamFooter{
+    margin-top: 43em;
+}
+@media only screen and (max-width: 450px) {
+    .mombersection{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    .teamFooter{
+        margin-top: 28em;
+    }
+
+}
+@media only screen and (max-width: 700px) {
+    .teamFooter{
+        margin-top: 34em;
+    }
+
+}
